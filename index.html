@@ -12,17 +12,13 @@
     <title>CrossUI - JSON Editor  - view, edit and format JSON online</title>
 </head>
     <body>
-        <div id='loading'>Loading...</div>
         <script type="text/javascript" src="//www.crossui.com/libs/2.0/js/xui-all.js"></script>
         <script type="text/javascript" src="//www.crossui.com/libs/2.0/js/Coder.js"></script>
         <script type="text/javascript" src="App/js/index.js"></script>
         <script type="text/javascript" src="App/js/CodeView.js"></script>
         <script type="text/javascript" src="App/js/TreeView.js"></script>
         <script type="text/javascript">
-            xui.setTheme('vista',true,function(){
-                new App().show();
-                xui('loading').remove();
-            });
+           new App().show();
         </script>
-</body>
+    </body>
 </html>
