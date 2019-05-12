@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="GUI design,GUI builder,web UI,RAD,RIA,development tool,multi-platform,cross-platform,web app" />
+    <meta name="description" content="CrossUI JSON Editor - view, edit and format JSON online" />
+    <meta name="copyright" content="copyright@crossui.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossUI - JSON Editor  - view, edit and format JSON online</title>
+</head>
+    <body>
+        <div id='loading'>Loading...</div>
+        <script type="text/javascript" src="//www.crossui.com/libs/2.0/js/xui-all.js"></script>
+        <script type="text/javascript" src="//www.crossui.com/libs/2.0/js/Coder.js"></script>
+        <script type="text/javascript" src="App/js/index.js"></script>
+        <script type="text/javascript" src="App/js/CodeView.js"></script>
+        <script type="text/javascript" src="App/js/TreeView.js"></script>
+        <script type="text/javascript">
+            xui.setTheme('vista',true,function(){
+                new App().show();
+                xui('loading').remove();
+            });
+        </script>
+</body>
+</html>
